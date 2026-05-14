@@ -29,11 +29,11 @@ using namespace std;
 
 //Escribirmos la firma de cada fucion
 
-void registrardatos (float notas[], string estudiantes[], int cantidad []);
-float calcularpromedio (float notas[], int cantidad[]);
-void notamayorymenor(string estidantes [], float notas[], int cantidad[]);
+void registrardatos (float notas[], string estudiantes[], int &cantidad);
+float calcularpromedio (float notas[], int cantidad);
+void notamayorymenor(string estidantes [], float notas[], int cantidad);
 void contaraprobadosoreprobados(float notas[], int cantidad);
-void buscarestudiante (string estudiante[], float notas, int cantidad[]);
+void buscarestudiante (string estudiantes[], float notas[], int cantidad);
 void mostrarmenu();
  
 //Metemos la funcion principal
@@ -45,17 +45,25 @@ int main()
     string estudiantes[10];
     int cantidad;
     float promedio;
-
-
-
-
-
-
-
+    
+    mostrarmenu();
+    registrardatos(notas, estudiantes, cantidad);
+    promedio = calcularpromedio (notas, cantidad);
+    notamayorymenor(estudiantes, notas, cantidad);
+    contaraprobadosoreprobados(notas, cantidad);
+    buscarestudiante(estudiantes, notas,cantidad);
 
     return 0;
 }
 
+void mostrarmenu ()
+{
 
+
+
+
+
+    
+}
 
 
