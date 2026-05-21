@@ -10,6 +10,11 @@ public class Mascota
         this.especie=especie;
         this.edad=edad;
     }
-
+    public void mostrarinfo()
+    {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Especie: " + especie);
+        System.out.println("Edad: " + edad);
+    }
 
 }
