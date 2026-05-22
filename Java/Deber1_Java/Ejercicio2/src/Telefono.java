@@ -23,6 +23,25 @@ public class Telefono
     {
         return precio;
     }
+    public void setmarca(String marca)
+    {
+        this.marca=marca;
+    }
+    public void setmodelo(String modelo)
+    {
+        this.modelo=modelo;
+    }
+    public void setprecio(double precio)
+    {
+        if (precio>=0)
+        {
+            this.precio=precio;
+        }
+        else
+        {
+            System.out.println("Error ingrese un numero mayor a 0");
+        }
+    }
     
 
 
