@@ -42,11 +42,12 @@ public class Telefono
             System.out.println("Error ingrese un numero mayor a 0");
         }
     }
-    
 
-
-
-
-
-
+    public void mostrarinfo()
+    {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Precio: " + precio);
+        System.out.println();
+    }
 }
