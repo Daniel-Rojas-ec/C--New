@@ -1,3 +1,13 @@
+/*
+Titulo: Deber 1 en java.
+Ejercicio 2
+Enunciado
+Crea una clase llamada Telefono que represente un teléfono.
+La clase debe tener los siguientes atributos privados:
+• marca
+• modelo
+• precio
+*/
 public class App 
 {
     public static void main(String[] args) throws Exception
